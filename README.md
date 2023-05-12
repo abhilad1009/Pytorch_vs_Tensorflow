@@ -30,3 +30,12 @@ Infernce Time
 ![inference](./inference_time.png)
 Model Size and Training Time
 ![modelsize](./model_size.png)
+
+The compiled list of issues uncovered.
+
+| Functionality    | Pytorch                                                                                                                                                         | Tensorflow                                                                                                                                                                                                         |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hardware Support | - No general TPU support - No quantization support on GPU                                                                                                       | - Convoluted implementation for GPU/TPU                                                                                                                                                                            |
+| Profiler         |                                                                                                                                                                 | - Profiler has conflict with TF model layers - No profiler support for inference                                                                                                                                   |
+| Quantization     | - Manual layer fusion expected - Manual quantization agent setup - Only supported on CPU - Automated quantization in beta - Embedding type layers not supported | - Requires special layer annotation for   unsupported layers (no documentation) - Auto quanitzation requires special interpreter - QAT has significant overhead (3x Pytorch) - Embedding type layers not supported |
+| Analysis         | - Quantization stubs do not allow    further probing                                                                                                            | - TF lite models are byte type, thus    preventing access to model layers                                                                                                                                          |
