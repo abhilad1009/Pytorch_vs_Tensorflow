@@ -16,12 +16,12 @@ Experiments
 # Code Structure
 All codes are in jupyter notebooks and do not need any special commands to run.
 Final Code:
-* Pytorch Implementation : [notebook]("./Profile_pt_clf.ipynb")
-* TensorFlow Implementation : [notebook]("./Profile_tf_clf.ipynb")
+* Pytorch Implementation : [notebook]("Profile_pt_clf.ipynb")
+* TensorFlow Implementation : [notebook]("Profile_tf_clf.ipynb")
 
 Failed and Scrapped Code:
-* Pytorch Implementation : [notebook]("./Failed_Pytorch_image_captioning.ipynb")
-* TensorFlow Implementation : [notebook]("./Failed_Tensorflow_image_captioning.ipynb")
+* Pytorch Implementation : [notebook]("Failed_Pytorch_image_captioning.ipynb")
+* TensorFlow Implementation : [notebook]("Failed_Tensorflow_image_captioning.ipynb")
 
 # Results
 Accuracy
